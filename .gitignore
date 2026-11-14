@@ -1,0 +1,140 @@
+# =====================================================================
+# SaleFlow ERP - Git Ignore Configuration
+# Hardened for Safe Private/Public Repository Operations
+# =====================================================================
+
+# ---------------------------------------------------------------------
+# 1. Environment & Configuration Files
+# ---------------------------------------------------------------------
+.env
+.env*
+.env.*
+*.env
+!.env.example
+
+# ---------------------------------------------------------------------
+# 2. Secrets, API Keys & Cryptographic Keys
+# ---------------------------------------------------------------------
+*.pem
+*.key
+*.cert
+*.crt
+*.pfx
+*.p12
+*.lic
+*.pkcs8
+*.pkcs12
+secrets/
+credentials/
+.pgpass
+.pg_service.conf
+
+# Licensing private keys
+*private*.key
+*private*.pem
+*.priv
+license.key
+license.json
+PLATFORM_LICENSE_PRIVATE_KEY*
+
+# ---------------------------------------------------------------------
+# 3. SQLite Databases, State & Storage
+# ---------------------------------------------------------------------
+*.db
+*.db-*
+*.db-shm
+*.db-wal
+*.db-journal
+*.sqlite
+*.sqlite3
+*.sqlite-*
+*.sqlite-shm
+*.sqlite-wal
+*.sqlite-journal
+data/
+
+# ---------------------------------------------------------------------
+# 4. Backups & Database Dumps
+# ---------------------------------------------------------------------
+backup/
+backups/
+*.bak
+*.dump
+
+# ---------------------------------------------------------------------
+# 5. ProgramData & Customer Data
+# ---------------------------------------------------------------------
+ProgramData/
+ProgramData_SaleFlow/
+**/ProgramData/**
+customer-data/
+storage/
+
+# ---------------------------------------------------------------------
+# 6. Dependencies & Package Managers
+# ---------------------------------------------------------------------
+node_modules/
+/.pnp
+.pnp.js
+
+# ---------------------------------------------------------------------
+# 7. Next.js & Frontend Build Outputs
+# ---------------------------------------------------------------------
+.next/
+out/
+.vercel
+
+# ---------------------------------------------------------------------
+# 8. Distribution & Build Packages
+# ---------------------------------------------------------------------
+build/
+dist/
+dist-hostinger/
+.hostinger/
+release/
+packages/
+
+# ---------------------------------------------------------------------
+# 9. Installer Outputs & Windows Binaries
+# ---------------------------------------------------------------------
+installer/Output/
+installer/output/
+[Oo]utput/
+*.exe
+!scripts/onprem/SaleFlow.exe
+*.msi
+*.iss.tmp
+
+# ---------------------------------------------------------------------
+# 10. Logs & Debug Traces
+# ---------------------------------------------------------------------
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ---------------------------------------------------------------------
+# 11. Temporary, Scratch & Test Artifacts
+# ---------------------------------------------------------------------
+scratch/
+.tempmediaStorage/
+tmp/
+temp/
+*.tmp
+.cache/
+.nyc_output/
+coverage/
+*migration-summary-report.json
+
+# ---------------------------------------------------------------------
+# 12. TypeScript & IDE / OS Artifacts
+# ---------------------------------------------------------------------
+*.tsbuildinfo
+next-env.d.ts
+.DS_Store
+Thumbs.db
+
+
+

@@ -1,0 +1,11 @@
+{
+  "version": "1.1.0",
+  "name": "SaleFlow ERP",
+  "releaseName": "Commercial On-Premise Edition",
+  "releaseDate": "2026-09-30",
+  "minNodeVersion": "20.0.0",
+  "targetPlatform": "win32-x64",
+  "schemaVersion": "1.1.0",
+  "publisher": "SaleFlow Systems",
+  "copyright": "Copyright (c) 2026 SaleFlow Systems. All rights reserved."
+}
